@@ -18,5 +18,9 @@
 	export let results, query;
 </script>
 
+<svelte:head>
+	<title>Results: {query}</title>
+</svelte:head>
+
 <h1>Search results for: {query}</h1>
 <Movies movies={results} />

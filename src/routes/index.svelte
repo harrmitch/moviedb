@@ -19,6 +19,10 @@
 	export let popular;
 </script>
 
+<svelte:head>
+	<title>Popular Movies</title>
+</svelte:head>
+
 <Search />
 
 <section in:fly={{ y: 50, duration: 500, delay: 500 }} out:fly={{ y: 50, duration: 500 }}>

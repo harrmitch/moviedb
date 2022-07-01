@@ -17,6 +17,10 @@
 	export let details;
 </script>
 
+<svelte:head>
+	<title>{details.title} ({details.release_date.slice(0, 4)})</title>
+</svelte:head>
+
 <div
 	class="movie-detail"
 	in:fly={{ y: 50, duration: 500, delay: 500 }}
